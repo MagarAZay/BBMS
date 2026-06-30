@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Test - BloodBank</title>
+    <link rel="stylesheet" href="eligibility-test.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body><nav class="navbar">
+    <a href="../index.html" class="nav-logo">
+       <div class="logo"><img src="../logo/logo.jpeg" alt="🩸"></div>
+      <span>BloodBank</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html" >Home</a></li>
+      <li><a href="blood-availability.html" >Blood Availability</a></li>
+      <li><a href="donation-programs.html">Donation Programs</a></li>
+      <li><a href="eligibility-test.html" class="active">Eligibility Test</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="../login/login.html"><button class="btn-login">Login</button></a>
+      <a href="../login/register.html"><button class="btn-register">Register</button></a>
+    </div>
+  </nav>
+
+    <header class="page-header">
+        <h1>Blood Donation Eligibility Test</h1>
+        <p>Answer a few questions to check if you're eligible to donate blood today.</p>
+    </header>
+
+    <section class="test-container">
+
+        <div class="question-card">
+            <h3>1. Are you between 18 and 65 years old?</h3>
+            <label><input type="radio" name="q1" value="yes"> Yes</label>
+            <label><input type="radio" name="q1" value="no"> No</label>
+        </div>
+
+        <div class="question-card">
+            <h3>2. Do you weigh more than 50 kg?</h3>
+            <label><input type="radio" name="q2" value="yes"> Yes</label>
+            <label><input type="radio" name="q2" value="no"> No</label>
+        </div>
+
+        <div class="question-card">
+            <h3>3. Have you donated blood in the last 3 months?</h3>
+            <label><input type="radio" name="q3" value="yes"> Yes</label>
+            <label><input type="radio" name="q3" value="no"> No</label>
+        </div>
+
+        <div class="question-card">
+            <h3>4. Are you currently healthy and free from illness?</h3>
+            <label><input type="radio" name="q4" value="yes"> Yes</label>
+            <label><input type="radio" name="q4" value="no"> No</label>
+        </div>
+
+        <div class="question-card">
+            <h3>5. Do you have any serious medical conditions?</h3>
+            <label><input type="radio" name="q5" value="yes"> Yes</label>
+            <label><input type="radio" name="q5" value="no"> No</label>
+        </div>
+
+        <button class="submit-btn">Check Eligibility</button>
+
+        <div class="result-box" id="result-box">
+            <h2>Your Result Will Appear Here</h2>
+            <p>Click the button after answering all questions.</p>
+        </div>
+
+    </section>
+<script src="eligibility-test.js"></script>
+</body>
+
+
+</html>
